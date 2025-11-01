@@ -1,0 +1,10 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+supabase==2.3.4
+python-dotenv==1.0.1
+pydantic==2.5.3
+```
+
+### 2️⃣ **Procfile** (à la racine)
+```
+web: uvicorn app.main:app --host 0.0.0.0 --port $PORT
