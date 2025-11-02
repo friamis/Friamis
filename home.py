@@ -16,8 +16,8 @@ import base64
 # CONFIGURATION SUPABASE
 # =====================================================
 
-SUPABASE_URL = os.getenv("SUPABASE_URL", "YOUR_SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY", "YOUR_SUPABASE_ANON_KEY")
+SUPABASE_URL = os.getenv("SUPABASE_URL", "https://qeapxsbygwnwskpppzmz.supabase.co")
+SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlYXB4c2J5Z3dud3NrcHBwem16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIwMTgwNjMsImV4cCI6MjA3NzU5NDA2M30.35iZdJrMpbQxeTsO2BdE8ndZ5SQ411le50wGMR7sBd0")
 
 try:
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
